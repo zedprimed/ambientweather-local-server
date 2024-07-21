@@ -59,6 +59,6 @@ COPY --from=build /build/api.configuration.example.json ./api/configuration.loca
 
 COPY --chmod=770 ./docker/entrypoint.sh .
 
-EXPOSE 8080 8443
+EXPOSE 8080
 ENTRYPOINT ["/app/entrypoint.sh"]
 CMD ["api"]
